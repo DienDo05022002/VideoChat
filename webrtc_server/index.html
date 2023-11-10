@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>index.html</title>
+        <script src="server.js"></script>
+    </head>
+    <body>
+        Server: <input type="text" id="server" value="ws://127.0.0.1:4567" /><br>
+        <input type="checkbox" id="loopback" checked="checked" /> Loopback (just send
+        received messages right back)<br>
+        Your name: <input type="text" id="localName" value="dien" />
+        <button id="connect" onclick="connect();">Connect</button>
+        <button disabled="true" id="disconnect"
+                onclick="disconnect();">
+            Disconnect
+        </button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    Target peer id: <input type="text" id="peer_id" size="3" />
+                </td>
+                <td>
+                    Message: <input type="text" id="message" />
+                </td>
+                <td>
+                    <button disabled="true" id="send" onclick="send();">Send</button>
+                </td>
+            </tr>
+        </table>
+        <button onclick="document.getElementById('debug').innerHTML='';">
+            Clear log
+        </button>
+
+        <preid>
+        </pre>
+        <span id="Listuser">List Username</span>
+
+
+        <pre id="debug"></pre>
+        <br><hr>
+    </body>
+</html>

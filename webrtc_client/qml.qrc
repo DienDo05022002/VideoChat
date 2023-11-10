@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>pics/account_username-25.png</file>
+        <file>pics/group-users-icon.png</file>
+        <file>Register.qml</file>
+        <file>PeerList.qml</file>
+        <file>Connect.qml</file>
+        <file>Streaming.qml</file>
+        <file>PeerDelegate.qml</file>
+    </qresource>
+</RCC>
